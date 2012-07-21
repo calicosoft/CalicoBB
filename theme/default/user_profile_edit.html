@@ -1,0 +1,55 @@
+<form action="index.php?act=usercp&amp;do=do_editprofile" method="post">
+	<table width="100%" class="forumIndex"> 
+		<caption> 
+			<span> 
+				<b class="sControl"></b> 
+				Edit Profile
+			</span> 
+		</caption> 
+		<tbody> 
+			<tr>
+				<td style="width:25%;">
+					<label for="username">Username</label></td>
+				<td>
+					<input class="input_text" id="username" type="text" value="{username}" readonly="readonly" name="username" /><br />
+					<small class="hint">You may not change your username.</small></td>
+			</tr>
+			<tr>
+				<td>
+					<label for="location">Location:</label></td>
+				<td>
+					<input class="input_text" id="location" type="text" value="{location}" name="location" /></td>
+			</tr>
+			<tr>
+				<td>
+					<label for="gender">Gender:</label></td>
+				<td>
+					{gender}</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="website">Website:</label></td>
+				<td>
+					<input class="input_text" id="website" type="text" value="{website}" name="website" /></td>
+			</tr>
+			<tr>
+				<td>
+					<label for="aboutme">About Me:</label></td>
+				<td>
+					<textarea id="aboutme" name="aboutme" style="width:100%;" rows="4">{aboutme}</textarea></td>
+			</tr>
+			<tr>
+				<td>
+					<label for="signature">Signature:</label></td>
+				<td>
+					{signature}</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input class="submitEnabled" onClick="wswgEditor.doCheck();" type="submit" name="submit" value="Edit Profile" /></td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="clippers"><div></div><span></span></div>
+</form>

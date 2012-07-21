@@ -1,0 +1,35 @@
+			<div class="calicoContentBlockRow">
+				<div class="calicoContentBlockRowCell" style="width:45%;">
+					<!-- General Information -->
+					<img src="{grav_url}" alt="{username}'s avatar" height="{size}" width="{size}" style="float:left;margin: 8px;"  />
+					<strong>Username:</strong> {username_html}<br />
+					<strong>Group:</strong> {group}<br />
+					<strong>Gender:</strong> {gender}<br />
+					<strong>Joined:</strong> {joined}<br />
+					<strong>Posts:</strong> {postcount} &ndash;
+						<a href="index.php?act=search&amp;do=findcontent&amp;uid={uid}&amp;content_type=posts">Find My Posts</a><br /><!-- DL -->
+					<strong>Location:</strong> {location}<br />
+					<strong>Last Active:</strong> {active} {where}
+					<!--{rep_{uid}}-->
+					<!-- Buttons -->
+					<div style="margin-top: 5px;">
+						<a class="smallButton" href="index.php?act=sendmessage&amp;to={uid}" title="Send me a message">Private Message</a> 
+						<a class="smallButton" href="index.php?act=search&amp;do=findcontent&amp;uid={uid}&amp;content_type=posts" title="Find my posts">My Posts</a>
+					</div>
+					<!-- Moderation -->
+					<div style="margin-top: 5px;">
+						{moderation}
+					</div>
+				</div>
+				<div class="calicoContentBlockRowCell" style="width:45;">
+					<strong>Signature:</strong><br />
+					{signature}<br /><br />
+					<strong>Contact Me:</strong><br />
+					<strong>Private Message:</strong>
+						<a href="index.php?act=sendmessage&amp;to={uid}">Send Private Message</a><br />
+					<strong>My Website:</strong>
+						{website}
+				</div>
+			</div>
+			<!-- Clear -->
+			<div style="clear:both;"></div>

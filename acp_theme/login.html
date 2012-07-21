@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>CalicoBB Admin</title>
+</head>
+<style type="text/css">
+	body{
+		margin: 0px;
+		padding: 0px;
+		font-family: Arial, Veranda, Times New Roman sans-serif;
+		font-size: 0.8em;
+		color: #000;
+	}
+	.calicoContainer{
+		width: 800px;
+		margin: 0px auto;
+		padding: 10px;
+		background: #fff;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.calicoLeft{
+		width: 150px;
+		float: left;
+	}
+	.calicoRight{
+		width: 640px;
+		float:right;
+	}
+</style>
+<body>
+<div class="calicoContainer">
+	<h1>CalicoBB Admin - Temporary Theme - LOGIN</h1>
+	<div class="calicoLeft">
+		<strong>Main:</strong><br />
+		&bull; <a href="admin.php" title="Go to the admin control panel homepage">Admin CP Home</a><!--/--><br />
+		&bull; <a href="admin.php?act=debug" title="Gives a list of information to help you debug the system">Debug</a><!--/--><br />
+		&bull; <a href="admin.php?act=rebuild&amp;rand={rand}" title="Rebuilds post counts, topic indicators, latest posts, etc. Can cause high CPU usage.">Rebuild</a><!--/--><br />
+		&bull; <a href="index.php?act=logout" title="Ends your session as an administrator">Logout</a><!--/--><br />
+		
+		<strong>Forums &amp; Posts</strong>:<br />
+		&bull; <a href="admin.php?act=forums" title="View, edit or delete forums">Manage forums</a><!--/--><br />
+		&bull; <a href="admin.php?act=newforum" title="Create a new forum">New forum</a><!--/--><br />
+		&bull; <a href="admin.php?act=viewdeletedtopics" title="View topics that have been deleted">View deleted topics</a><!--/--><br />
+		&bull; <a href="admin.php?act=searchposts" title="Search existing posts created on your forums">Search posts</a><!--/--><br />
+		&bull; <a href="admin.php?act=wordcensor" title="Add or remove words from the swear world filter">Word filter</a><!--/--><br />
+		
+		<strong>Users &amp; Groups</strong><br />
+		&bull; <a href="admin.php?act=users" title="View, edit or delete existing users">Manage users</a><!--/--><br />
+		&bull; <a href="admin.php?act=massmail" title="Send a newsletter to all your members">Mass mail users</a><!--/--><br />
+		&bull; <a href="admin.php?act=groups" title="View, edit or delete existing groups">Manage groups</a><!--/--><br />
+		&bull; <a href="admin.php?act=newgroup" title="Create a new group">New group</a><!--/--><br />
+		
+		<strong>Moderators:</strong><br />
+		&bull; <a href="admin.php?act=ipaddresses" title="Search for posts made by a specific IP address (check for duplicate accounts)">IP address search</a><!--/--><br />
+		&bull; <a href="admin.php?act=management&amp;manage=forum" title="View, add or remove moderators for specific forums">Forum Moderators</a><!--/--><br />
+		&bull; <a href="admin.php?act=warningtypes" title="View or delete current warning types">Warning types</a><!--/--><br />
+		&bull; <a href="admin.php?act=warnings" title="View current warnings given out by the moderating team">Warnings</a><!--/--><br />
+		&bull; <a href="admin.php?act=bannedusers" title="View banned users on your messageboard, or unban them">View banned users</a><!--/--><br />
+		
+		<strong>Subscriptions:</strong><br />
+		&bull; <a href="admin.php?act=subscription_packages" title="View, edit or change subscription packages">Subscription Packages</a><!--/--><br />
+		&bull; <a href="admin.php?act=subscriptions" title="View or cancel existing subscriptions">Active Subscriptions</a><!--/--><br />
+		
+		<strong>Settings:</strong><br />
+		&bull; <a href="admin.php?act=settings" title="View, edit or change messageboard settings">Settings</a><!--/--><br />
+		&bull; <a href="admin.php?act=wordcensor" title="Add or remove words from the swear world filter">Word filter</a><!--/--><br />
+	</div>
+	<div class="calicoRight">
+		<form action="" method="post">
+			<p>Enter your username:</p>
+			<input type="text" class="logininput" name="username" />
+			<p>Enter your password:</p>
+			<input type="password" class="logininput" name="password" />
+			<input type="submit" class="loginbtn" name="login" value="Login" /><br />
+			<!--<p><a href="index.php?action=resetpassword" title="Forgoteen Password?">Forgotten Password?</a></p>-->
+		</form>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+</body>
+</html

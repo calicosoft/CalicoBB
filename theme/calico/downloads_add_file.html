@@ -1,0 +1,20 @@
+		<form action="" id="uploadForm" method="post" enctype="multipart/form-data">
+			<p>
+				<label for="title">Title:</label>
+				<input type="text" class="input_text" name="title" id="title" /></p>
+			<p>
+				<label for="u_file">File:</label>
+				<input type="file" class="input_text" name="u_file" id="u_file" /></p>
+			<p>
+				<label for="price">Price:</label>
+				<input type="text" name="price" id="price" value="0.00" /><br />
+				<span class="hint">You can enter a price to sell your download at. Payments are made via PayPal.</p>
+			<p>
+				<label for="cat">Category:</label>
+				<select name="cat" id="cat">{catlist}</select></p>
+			<p>
+				<label for="description">Description:</label>
+				{editor}</p>
+			<p>
+				<input type="submit" value="Add File" onclick="wswgEditor.doCheck();" class="smallButton" /></p>
+		</form>

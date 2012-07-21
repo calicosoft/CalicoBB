@@ -1,0 +1,25 @@
+<form action="index.php?act=moderate&do=dowarn&{qs}" method="post">
+	<div class="calicoContentBlock">
+		<!-- Title -->
+		<div class="calicoContentBlockHeader">
+			Warn User
+		</div>
+		<!-- Content Block Inner -->
+		<div class="calicoContentBlockContent">
+			<p>
+				You can warn a user if they are breaking forum rules. The warning system will automatically increase their warning 
+				level. If a user gets more than {max_points} warning points, they will be banned until their warning level is below {max_points}.<br />
+				A profile warning warns a user purely on the content of their profile, a post is not included.</p>
+			<p>
+				<strong>Warning Reason:</strong></p>
+			<p>
+				{reasons}</p>
+			<p>
+				<strong>Message to User:</strong></p>
+			<p>
+				{editor}</p>
+			<p>
+				<input onclick="wswgEditor.doCheck();" type="submit" value="Warn User" name="warn" class="buttonEnabled" /></p>
+		</div>
+	</div>
+</form>

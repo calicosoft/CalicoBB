@@ -1,0 +1,47 @@
+<table width="100%" class="forumIndex"> 
+	<caption> 
+		<span> 
+			<b class="sControl"></b> 
+			{username}&#39;s profile
+		</span> 
+	</caption> 
+	<tbody>
+		<tr>
+			<td style="width: 15%;">General Information:</td>
+			<td>
+				<img src="{grav_url}" alt="{username}'s avatar" height="{size}" width="{size}" style="float:left;margin: 4px;"  />
+				<strong>Username:</strong> {username_html}<br />
+				<strong>Group:</strong> {group}<br />
+				<strong>Gender:</strong> {gender}<br />
+				<strong>Location:</strong> {location}<br />
+				<strong>Last Active:</strong> {active} {where}
+				<!--{rep_{uid}}--></td>
+		</tr>
+		<tr>
+			<td>Joined:</td>
+			<td>{joined}</td>
+		</tr>
+		<tr>
+			<td>Posts:</td>
+			<td>{postcount} &ndash; <a href="index.php?act=search&amp;do=findcontent&amp;uid={uid}&amp;content_type=posts">Find My Posts</a></td>
+		</tr>
+		<!-- DL -->
+		<tr>
+			<td>Contact Me:</td>
+			<td><a href="index.php?act=sendmessage&amp;to={uid}&amp;u=profile">Send Private Message</a></td>
+		</tr>
+		<tr>
+			<td>My Website:</td>
+			<td>{website}</td>
+		</tr>
+		<tr>
+			<td>About Me:</td>
+			<td>{aboutme}</td>
+		</tr>
+		<tr>
+			<td>Signature:</td>
+			<td>{signature}</td>
+		</tr>
+	</tbody>
+</table>
+<div class="clippers"><div></div><span></span></div>

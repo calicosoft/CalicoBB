@@ -1,0 +1,9 @@
+	<p>
+		<label for="title">Topic Title:</label>
+		<input id="title" class="input_text" name="title" type="text" value="RE: {t_title}" /></p>
+	<p>
+		<label for="messageBody">Topic:</label>
+		{editor}</p>
+	<p>
+		<input type="submit" value="Reply to Topic" name="sb" class="submitEnabled" 
+			onClick="wswgEditor.doCheck(); this.disabled=true; this.value='Please Wait...'; this.form.submit();" /></p>

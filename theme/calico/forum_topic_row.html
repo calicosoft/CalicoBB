@@ -1,0 +1,21 @@
+		<!-- Begin Topic {tid} -->
+			<div class="calicoContentBlockRow" id="topic{tid}">
+				<div class="calicoContentBlockRowCell" style="width:65%;">
+					{pinned}{hot}{my}
+					<a href="{t_url}" title="Topic started: {dateline}" id="topic{tid}Title">{t_title}</a> {closed}
+					<br /><small>Posted by: <a href="{owner_url}">{owner}</a> {mod}</small>
+				</div>
+				<div class="calicoContentBlockRowCell" style="width:10%;">
+					<span class="cellSmall">
+						Posts: {postcount}<br />
+						Views: {views}
+					</span>
+				</div>
+				<div class="calicoContentBlockRowCell">
+					<a href="index.php?topic={tid}&amp;pid={lp_pid}">{lp_subject}</a><br />
+					by <a href="{lp_owner_url}">{lp_owner}</a>
+				</div>
+			</div>
+			<!-- Clear -->
+			<div class="clear"></div>
+		<!-- End Topic {tid} -->

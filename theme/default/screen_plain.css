@@ -1,0 +1,671 @@
+/* null margins and padding to give good cross-browser baseline */
+html,body,address,blockquote,div,
+form,fieldset,caption,
+h1,h2,h3,h4,h5,h6,
+hr,ul,li,ol,ul,
+table,tr,td,th,p,img {
+	margin:0;
+	padding:0;
+}
+
+img,fieldset {
+	border:none;
+}
+
+hr, 
+.jumpto {
+	display:none;
+}
+
+a {
+	color:#00F;
+}
+
+a:visited {
+	color:#00F;
+}
+
+a:active,
+a:focus,
+a:hover {
+	color:#004;
+}
+
+body {
+	padding:0 16px 8px;
+	text-align:center; /* center #pageWrapper IE 5.x */
+	font:normal 85%/130% arial,helvetica,sans-serif;
+	background:#035 url(images/bodyBackground.png) top center repeat-y;
+}
+
+#pageWrapper {
+	position:relative;
+	overflow:hidden; /* wrap floats */
+	zoom:1; /* trip haslayout, wrap floats in IE */
+	min-width:736px;
+	max-width:74em;
+	margin:0 auto;
+	text-align:left;
+}
+
+* html #pageWrapper {
+	/*
+		IE has no min/max width, but we can fake it
+		with an expression. First we set a fixed width
+		as a lowest common denominator for when jscript
+		is disabled, then we run the expression to overload
+		it if jscript is present.
+	*/
+	width:736px;
+	width:expression(
+		(document.body.clientWidth>1152) ? "1104px"
+			: ((document.body.clientWidth>800) ? "auto" : "736px")
+	);
+}
+
+h1 {
+	position:relative;
+	zoom:1; /* trip haslayout */
+	padding:44px 0;
+	font:bold 48px/50px arial,helvetica,sans-serif;
+	color:#FFF;
+}
+
+h1 span {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:138px;
+	background:url(images/bodyBackground.png) top center repeat-y;
+}
+h1 span span {
+	top:10px;
+	width:321px;
+	background:url(images/h1_Logo.png) 0 0 no-repeat;
+}
+
+#topAdvert {
+	position:absolute;
+	top:0;
+	right:0;
+	width:488px;
+}
+
+#topAdvert .time {
+	position:relative;
+	padding-top:8px;
+	z-index:50;
+	width:488px;
+	text-align:center;
+	margin-bottom:-2px;
+	font:normal 14px/16px arial,helvetica,sans-serif;
+	background:#DEF;
+}
+
+.innerAdvert {
+	width:488px;
+	padding-top:10px;
+	background:#DEF;
+}
+
+/* remove this and the span in markup on production copy */
+.innerAdvert span {
+	display:block;
+	margin:0 10px;
+	height:60px;
+	line-height:60px;
+	text-align:center;
+	background:#FFF;
+}
+
+#mainMenu {
+	list-style:none;
+	position:relative;
+	float:right;
+	margin-top:-32px;
+}
+
+#mainMenu li {
+	display:inline;
+	zoom:1; /* trip haslayout */
+}
+
+#mainMenu a {
+	position:relative;
+	float:left;
+	zoom:1; /* trip haslayout */
+	padding:7px 4px 7px 36px;
+	text-align:left;
+	text-decoration:none;
+	font:bold 16px/18px arial,helvetica,sans-serif;
+	color:#FFF;
+}
+
+#mainMenu a:active,
+#mainMenu a:focus,
+#mainMenu a:hover {
+	color:#CEF;
+}
+
+#mainMenu span {
+	position:absolute;
+	top:6px;
+	left:12px;
+	width:20px;
+	height:20px;
+	background:url(images/buttonIcons.png) 0 0 no-repeat;
+}
+
+#mainMenu .home span {
+	background-position:0 0;
+}
+
+#mainMenu .forum span {
+	background-position:0 -81px;
+}
+
+#mainMenu .blog span {
+	background-position:0 -500px;
+}
+
+#mainMenu .marketplace span {
+	background-position:0 -300px;
+}
+
+#mainMenu .search span {
+	background-position:2px -200px;
+}
+
+#mainMenu .rules span {
+	background-position:0 -40px;
+}
+
+#mainMenu .invite span {
+	background-position:0 -680px;
+}
+#mainMenu .download span {
+	background:url(images/download.png) 0 0 no-repeat;
+}
+
+.borderTop,
+.borderBottom {
+	position:relative;
+	font-size:1px;
+	height:10px;
+	margin-right:10px;
+	background:url(images/outerCorners.png) 0 0 no-repeat;
+}
+
+.borderBottom {
+	background-position:0 -10px;
+}
+
+.borderTop div,
+.borderBottom div {
+	position:absolute;
+	right:-10px;
+	top:0;
+	width:12px;
+	height:10px;
+	background:url(images/outerCorners.png) -2036px 0 no-repeat;
+}
+
+.borderBottom div {
+	background-position:-2036px -10px;
+}
+
+#header {
+	padding:0 10px 10px;
+	background:#DEF;
+	border-bottom:2px solid #ABC;
+}
+
+#header span {
+	white-space:nowrap;
+}
+
+#header ul {
+	list-style:none;
+	overflow:hidden; /* wrap floats */
+	zoom:1; /* trip haslayout, wrap floats IE */
+}
+
+#header li {
+	float:left;
+	white-space:nowrap;
+	padding:0 0.4em;
+	border-left:1px solid #000;
+}
+
+#header li.first {
+	border:0;
+	padding-left:0;
+}
+
+#header .subControls {
+	float:right;
+	width:9em;
+	text-align:right;
+}
+
+#header .subControls li {
+	float:right;
+	padding:0;
+	border:0;
+}
+
+#contentWrapper {
+	clear:both;
+}
+
+.innerWrapper .borderTop,
+.innerWrapper .borderBottom,
+.innerWrapper .borderTop div,
+.innerWrapper .borderBottom div {
+	background-image:url(images/fadedCorners.png);
+}
+
+.innerWrapper .borderLeft {
+	padding-left:10px;
+	background:url(images/fadedCorners.png) -2048px 0 repeat-y;
+}
+
+.innerWrapper .borderRight {
+	overflow:hidden; /* wrap floats */
+	zoom:1; /* trip haslayout, wrap floats IE */
+	padding-right:10px;
+	background:#FFF url(images/fadedCorners.png) top right repeat-y;
+	padding-bottom: 15px;
+}
+
+.forumIndex {
+	position:relative;
+	width:100%;
+	border-collapse:collapse;
+}
+
+.forumIndex caption {
+	text-align:left;
+	padding-left:8px;
+	font:bold 100%/120% arial,helvetica,sans-serif;
+	background:#058 url(images/outerCorners.png) 0 -24px no-repeat;
+}
+
+.forumIndex caption span {
+	position:relative;
+	overflow:hidden;
+	zoom:1; /* trip haslayout */
+	display:block;
+	padding:0.3em 0;
+	color:#FFF;
+}
+
+.forumIndex caption b {
+	position:absolute;
+	top:0;
+	right:0;
+	width:32px;
+	height:1.8em;
+	background:url(images/outerCorners.png) -2016px -24px no-repeat;
+}
+
+.forumIndex caption a {
+	display:block;
+	color:#FFF;
+	text-decoration:none;
+}
+
+.forumIndex thead th {
+	background:url(images/outerCorners.png) 0 -96px no-repeat;
+}
+
+.forumIndex tbody td {
+	background:url(images/outerCorners.png) 0 -160px no-repeat;
+}
+
+.forumIndex th,
+.forumIndex td {
+	text-align:left;
+	vertical-align:top;
+	padding:6px 0.8em;
+}
+
+.forumIndex .icon {
+	width:32px;
+	padding-top:10px;
+	text-align:center;
+	font:normal 8px/8px arial,helvetica,sans-serif;
+}
+
+.forumIndex tbody .icon a,
+.forumIndex tbody .icon span {
+	position:relative;
+	display:block;
+	width:32px;
+	height:32px;
+}
+
+.forumIndex tbody .icon a {
+	text-decoration:none;
+}
+
+.forumIndex tbody .icon del,
+.forumIndex tbody .icon b {
+	position:absolute;
+	top:0;
+	left:0;
+	width:32px;
+	height:32px;
+	background:url(images/forumPostIcons.png) 0 0 no-repeat;
+}
+
+.forumIndex tbody .icon b {
+	background-position:0 -32px;
+}
+
+
+
+.forumIndex thead th.icon,
+.forumIndex thead th.description {
+	background-position:-1px -96px;
+}
+
+.forumIndex tbody td.icon {
+	background-position:-1px -160px;
+}
+
+.forumIndex .lastPost {
+	width:20%;
+	white-space:nowrap;
+}
+
+.forumIndex .lastPost a {
+	font-weight:bold;
+}
+
+.forumIndex .threads,
+.forumIndex .posts {
+	width:1%;
+	text-align:center;
+}
+
+.forumIndex .fifty{
+	width: 50%;
+}
+.forumIndex .twenty_five{
+	width: 25%;
+}
+
+.forumIndex .noPosts{
+	width:5%;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.forumIndex h2 {
+	font:bold 100%/150% arial,helvetica,sans-serif;
+}
+
+.forumIndex h3 {
+	display:inline;
+	font:bold 100%/150% arial,helvetica,sans-serif;
+}
+
+.forumIndex .description ul {
+	list-style:none;
+	display:inline;
+}
+
+.forumIndex .description li {
+	display:inline;
+	padding-left:16px;
+}
+
+.bbCode table,tr,th,td,tbody{
+	background: none;
+}
+
+.userControlLeft{
+	float: left;
+	width: 15%;
+}
+.userControlRight{
+	float: left;
+	margin-left: 5%;
+	width: 80%;
+}
+
+#footer {
+	clear:both; /* should be unneccessary, but you never know */
+	padding:10px 10px 0;
+	background:#DEF;
+	border-top:2px solid #ABC;
+}
+
+.clippers {
+	position:relative;
+	width:100%;
+	font-size:1px;
+	height:10px;
+}
+
+.clippers div,
+.clippers span {
+	position:absolute;
+	top:-8px;
+	width:8px;
+	height:8px;
+	background:url(images/outerCorners.png) -2040px -96px;
+}
+
+.clippers div {
+	left:0;
+}
+
+.clippers span {
+	right:0;
+	background-position:-2040px -104px;
+}
+
+.innerWrapper .borderBottom {
+	margin-top:-10px;
+}
+
+.buttonEnabled{
+	min-width: 105px;
+	font-size: 15px;
+	padding: 8px 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 10px;
+	margin-left: 4px;
+	background-color: #058;
+	color: white !important;
+	line-height: 1.2;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none !important;
+	display: inline-block;
+	float: right;
+	font-weight: bold;
+	border: none;
+}
+.buttonDisabled{
+	min-width: 105px;
+	font-size: 15px;
+	padding: 8px 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 10px;
+	margin-left: 4px;
+	background-color: #8F8E8E;
+	color: white !important;
+	line-height: 1.2;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none !important;
+	display: inline-block;
+	float: right;
+	font-weight: bold;
+	border: none;
+}
+.smallButton{
+	padding: 3px 5px;
+	background-color: #058;
+	color: white !important;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none !important;
+	font-weight: bold;
+	border: none;
+}
+.submitEnabled{
+	min-width: 105px;
+	padding: 8px 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #058;
+	color: white !important;
+	line-height: 1.2;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none !important;
+	display: inline-block;
+	font-weight: bold;
+	border: none;
+}
+.input_text{
+	background: white url(images/input_text.png);
+	border: 1px solid #9F9F9F;
+	padding: 2px
+}
+
+/* Errors */
+/* Status Bars */
+.status {padding: 8px 10px 5px 10px; border-radius: 10px; -moz-border-radius: 10px; text-shadow: 1px 1px 1px #fff; overflow: auto; margin-bottom: 20px; clear: both;}
+.status img {float: left; padding-right: 5px;}
+.status p {padding: 0; margin: 0;}
+.status p span {font-weight: 700;}
+.status .closestatus {float: right; color: #fff; text-align: center; margin-left: 10px;}
+.status .closestatus a {position: relative; color: #fff; text-decoration: none; padding: 5px; width: 10px; height: 10px; display: block; border-radius: 5px; -moz-border-radius: 5px; line-height: .6em; top: -2px; text-shadow: none;}
+
+.success {border: 3px solid #8EA534; background: #CBDA8F url(/icons/bg_fade_green_med.png) repeat-x top;}
+.success span {color: #8EA534;}
+.success .closestatus a {background: #8EA534;}
+.success .closestatus a:hover {background: #829829;}
+
+.error {border: 3px solid #990000; background: #F5D0CD url(/icons/bg_fade_red_med.png) repeat-x top;}
+.error span {color: #990000;}
+.error .closestatus a {background: #990000;}
+.error .closestatus a:hover {background: #730D0D;}
+
+.info {border: 3px solid #2FADD7; background: #92D6ED url(/admin_theme/img/bg_fade_blue_med.png) repeat-x top;}
+.info span {color: #0E7A9F;}
+.info .closestatus a {background: #2FADD7;}
+.info .closestatus a:hover {background: #228DB0;}
+
+/* Postbit */
+.postinfo{
+	font-size: 0.8em;
+}
+.postinfo_br{
+	margin-top: 3px;
+}
+.postusername{
+	font-size: 1.2em;
+}
+.postusername a{
+	text-decoration: none;
+}
+.postSubject{
+	font-weight: bold;
+	/*border-bottom: 1px solid #035;*/
+}
+.post_sig{
+	color: #8E8E8E;
+	font-size: 11px;
+	border-top: 1px solid #D5DDE5;
+}
+.topic_sticky{
+	font-size: 0.8em;
+	font-weight: bold;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 0px 4px;
+	background: #FFE188;
+	color: #594300;
+	text-shadow: 1px 1px 1px #FFF5C1;
+	padding: 0 8px;
+	margin-right: 2px;
+}
+
+/* Quotes */
+.quote{
+	margin-left: 5%;
+	padding: 5px;
+	background-color: #8F8E8E;
+	border-radius: 5px;
+}
+.quoteHeader{
+	color: white !important;
+}
+.quoteBody{
+	background-color: #fff;
+}
+
+/* Moderator Tools */
+.modTools{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* Share via Twitter */
+.shareViaTwitterFacebook{
+	margin-top: 9px;
+}
+
+/* Pagination */
+.pagination ul{
+	text-decoration: none;
+	display: block;
+}
+.pagination li{
+	font-size: 90%;
+	background: white;
+	border: 1px solid #CFCFCF;
+	margin: 0 2px 0 2px;
+	padding: 2px;
+	float: left;
+	list-style: none;
+	display: block;
+}
+.pagination .active{
+	color: #004;
+	font-weight: bold;
+	display: block;
+}
+.pagination .detail{
+	border: 1px solid #fff;
+}
+
+/* Edited by Message */
+.editMessage{
+	margin-top: 5px;
+	color: #8E8E8E;
+	font-size: 11px;
+}
+
+/* Sub Forum Display */
+.subForum{
+	font-size: 0.8em;
+}

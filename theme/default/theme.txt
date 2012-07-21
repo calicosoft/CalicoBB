@@ -1,0 +1,2 @@
+If you want to disable this theme, simply remove this file (or rename it).
+Note: you cannot disable the default theme!

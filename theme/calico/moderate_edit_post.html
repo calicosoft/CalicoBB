@@ -1,0 +1,23 @@
+<form action="index.php?act=moderate&do=editpost&pid={pid}&tid={tid}" method="post">
+	<div class="calicoContentBlock">
+		<!-- Title -->
+		<div class="calicoContentBlockHeader">
+			Edit Post {subject}
+		</div>
+		<!-- Content Block Inner -->
+		<div class="calicoContentBlockContent">
+			<p>
+				<label for="title">Post Title:</label>
+				<input id="title" class="inputbox_post" name="title" type="text" value="{subject}" /></p>
+			<p>
+				<label for="messageBody">Post:</label>
+				{editor}</p>
+			<p>
+				<label for="edit_msg">Edit Reason: (leave blank to disable)</label>
+				<input id="edit_msg" class="inputbox_post" name="edit_msg" type="text" value="{edit_msg}" /></p>
+			<p>
+				<input type="submit" value="Edit Post" name="sb" class="submitEnabled"
+					onClick="wswgEditor.doCheck(); this.disabled=true; this.value=\'Please Wait...\'; this.form.submit();" />	
+		</div>
+	</div>
+</form>

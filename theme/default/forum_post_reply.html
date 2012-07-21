@@ -1,0 +1,17 @@
+	<tbody>
+		<tr>
+			<td><label for="title">Post Title:</label></td>
+			<td>
+				<input id="title" class="input_text" name="title" type="text" value="RE: {t_title}" /></td>
+		</tr>
+		<tr>
+			<td><label for="messageBody">Post:</label></td>
+			<td>{editor}</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<input type="submit" value="Reply to Topic" name="sb" class="submitEnabled" onClick="wswgEditor.doCheck(); this.disabled=true; this.value=\'Please Wait...\'; this.form.submit();" />	
+			</td>
+		</tr>
+	</tbody>

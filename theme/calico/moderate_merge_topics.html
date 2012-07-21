@@ -1,0 +1,22 @@
+<form method="post" name="merge_topic">
+	<div class="calicoContentBlock">
+		<!-- Title -->
+		<div class="calicoContentBlockHeader">
+			Edit Post {subject}
+		</div>
+		<!-- Content Block Inner -->
+		<div class="calicoContentBlockContent">
+			<p>
+				To merge topics, enter the topic ID for each topic. Topic 1 will be the primary topic. Posts from Topic 2 will be 
+				added to Topic 2. A topic ID follows the format <em>index.php?topic=<u>12345</u></em> (12345 is the ID).</p>
+			<p>
+				<label for="topic_1">Topic 1 (Primary Topic):</label>
+				<input name="topic_1" id="topic_1" value="{tid}" size="5" type="text" /></p>
+			<p>
+				<label for="topic_2">Topic 2:</label>
+				<input name="topic_2" id="topic_2" size="5" type="text" /></p>
+			<p>
+				<input name="submit" type="submit" value="Merge Topics" /></p>
+		</div>
+	</div>
+</form>

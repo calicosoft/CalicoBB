@@ -1,0 +1,34 @@
+<form action="index.php?act=moderate&do=editpost&pid={pid}&tid={tid}" method="post">
+	<table width="100%" class="forumIndex"> 
+		<caption> 
+			<span> 
+				<b class="sControl"></b> 
+				Edit Post {subject}
+			</span> 
+		</caption> 
+		<tbody>
+			<tr>
+				<td><label for="title">Post Title:</label></td>
+				<td>
+					<input id="title" class="inputbox_post" name="title" type="text" value="{subject}" /></td>
+			</tr>
+			<tr>
+				<td><label for="messageBody">Post:</label></td>
+				<td>{editor}</td>
+			</tr>
+			<tr>
+				<td><label for="edit_msg">Edit Reason: (leave blank to disable)</label></td>
+				<td>
+					<input id="edit_msg" class="inputbox_post" name="edit_msg" type="text" value="{edit_msg}" /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" value="Edit Post" name="sb" class="submitEnabled"
+						onClick="wswgEditor.doCheck(); this.disabled=true; this.value=\'Please Wait...\'; this.form.submit();" />	
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+<div class="clippers"><div></div><span></span></div> 

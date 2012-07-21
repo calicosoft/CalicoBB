@@ -1,0 +1,68 @@
+<form action="" method="post">
+	<table width="100%" class="forumIndex"> 
+		<caption> 
+			<span> 
+				<b class="sControl"></b> 
+				Manage Board Settings
+			</span> 
+		</caption> 
+		<tbody>
+			<tr>
+				<td class="fifty">
+					<strong><label for="posts_per_page">Posts per Page:</label></strong><br />
+					How many posts should be shown per page?</td>
+				<td>
+					<select name="posts_per_page" id="posts_per_page">{posts_per_page}</select></td>
+			</tr>
+			<tr>
+				<td>
+					<strong><label for="topics_per_page">Topics per Page:</label></strong><br />
+					How many topics should be shown per page?</td>
+				<td>
+					<select name="topics_per_page" id="topics_per_page">{topics_per_page}</select></td>
+			</tr>
+			<tr>
+				<td>
+					<strong><label for="view_signatures">View Signatures:</label></strong><br />
+					Do you wish to view signatures when viewing topics?</td>
+				<td>
+					<input id="view_signatures" name="view_signatures" type="checkbox" value="1" {view_signatures} /> Show Signatures</td>
+			</tr>
+			<tr>
+				<td>
+					<strong><label for="view_avatars">View Avatars:</label></strong><br />
+					Do you wish to view avatars when viewing topics?</td>
+				<td>
+					<input id="view_avatars" name="view_avatars" type="checkbox" value="1" {view_avatars} /> Show Avatars</td>
+			</tr>
+			<tr>
+				<td>
+					<strong><label for="allow_pms">Receive PM&#39;s:</label></strong><br />
+					Do you wish to receive Private Messages from other users?</td>
+				<td>
+					<input id="allow_pms" name="allow_pms" type="checkbox" value="1" {allow_pms} /> Receive PM&#39;s</td>
+			</tr>
+			<tr>
+				<td>
+					<strong><label for="allow_emails">Receive Emails:</label></strong><br />
+					Do you wish to receive emails from the forum management?</td>
+				<td>
+					<input id="allow_emails" name="allow_emails" type="checkbox" value="1" {allow_emails} /> Receive Emails</td>
+			</tr>
+			<tr>
+				<td>
+					<strong><label for="advanced_editor">Enable Advanced Editor:</label></strong><br />
+					Show the Advanced Editor when posting &amp; editing topics? (Requires a modern browser &amp; Javascript)</td>
+				<td>
+					<input id="advanced_editor" name="advanced_editor" type="checkbox" value="1" {advanced_editor} /> Enabled Advanced Editor</td>
+			</tr>
+			<tr>
+				<td>
+					&nbsp;</td>
+				<td>
+					<input class="submitEnabled" name="submit" type="submit" value="Change Settings" /></td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+<div class="clippers"><div></div><span></span></div>

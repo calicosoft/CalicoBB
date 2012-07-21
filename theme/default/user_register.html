@@ -1,0 +1,89 @@
+<form action="index.php?act=doregister" method="post">
+	<table width="100%" class="forumIndex"> 
+		<caption> 
+			<span> 
+				<b class="sControl"></b> 
+				Create a new account
+			</span> 
+		</caption> 
+		<thead>
+			<tr>
+				<th colspan="2">
+					Ready to create a new account? Registering is free and easy, and gives you access to many features. We just need you to
+					fill out this short form, and you&#39;ll be posting in no time!<br />
+					Already a member? <a href="index.php?act=login">Log in to your account</a>.
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td style="width:50%; text-align: right;">
+					<label for="username"><strong>Username:</strong></label>
+				</td>
+				<td>
+					<input class="input_text" id="username" name="username" type="text" /><br />
+					<small class="hint">This will be the name you&#39;ll login with, and the name that appears when you post</small>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: right;">
+					<label for="password"><strong>Password:</strong></label>
+				</td>
+				<td>
+					<input class="input_text" id="password" name="password" type="password" /><br />
+					<small class="hint">Enter a <em>strong</em> password.</small></p>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: right;">
+					<label for="password2"><strong>Re-enter password:</strong></label>
+				</td>
+				<td>
+					<input class="input_text" id="password2" name="password2" type="password" /><br />
+					<small class="hint">Re-enter your password, for verification.</small>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: right;">
+					<label for="email"><strong>Email Address:</strong></label>
+				</td>
+				<td>
+					<input class="input_text" id="email" name="email" type="text" /><br />
+					<small class="hint">Enter a valid email address in case we need to contact you.</small>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: right;">
+					<label for="email2"><strong>Re-enter email:</strong></label>
+				</td>
+				<td>
+					<input class="input_text" id="email2" name="email2" type="text" /><br />
+					<small class="hint">Re-enter your email address, for verification.</small>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: right;">
+					<label for="{botcheck_yes}"><strong>Bot Check:</strong></label><br />
+					Are you a human?
+				</td>
+				<td>
+					<label for="{botcheck_yes}">
+						<input checked="checked" name="botcheck" id="{botcheck_yes}" type="radio" value="{botcheck_yes}" />
+						Yes, I am a bot
+					</label>
+					<br />
+					<label for="{botcheck_no}">
+						<input name="botcheck" id="{botcheck_no}" type="radio" value="{botcheck_no}" />
+						No, I am not a bot
+					</label>
+				</td>
+			</tr>
+{recaptcha}
+			<tr>
+				<td>&nbsp;</td>
+				<td><input type="submit" class="submitEnabled" value="Create New Account" class="btn" /></td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+<div class="clippers"><div></div><span></span></div>

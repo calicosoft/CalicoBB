@@ -1,0 +1,35 @@
+/* Reputation CSS - CalicoBB */
+.reputation_box{
+	border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	-webkit-border-radius: 0px !important;
+	padding: 3px 0;
+	/*text-shadow: 1px 1px 1px white;*/
+}
+.rep_positive, .rep_neutral, .rep_negative{
+	color: white !important;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	padding: 3px 8px;
+}
+.rep_positive a, .rep_neutral a, .rep_negative a{
+	text-decoration:none;
+	color: white !important;
+}
+.rep_positive{
+	background: #6F8F52;
+}
+.rep_negative{
+	background: #B82929;
+}
+.rep_neutral{
+	background: #DEDEDE;
+	color: #6E6E6E !important;
+}
+.reputation_count_white{
+	color: white;
+}
+.reputation_count_grey{
+	color: #6E6E6E !important;
+}

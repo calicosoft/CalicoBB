@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>{title}</title>
+	<link href="theme/calico/style.css" rel="stylesheet" type="text/css" />
+	<script src="theme/calico/light-theme.js" type="text/javascript"></script>
+	<script src="calicobb.js" type="text/javascript"></script>
+	<!--{prettify}-->
+</head>
+<body>
+	<!-- Search Bar -->
+	<div class="calicoTopMenuSearch">
+		<form action="index.php" method="get">
+			<input type="hidden" name="act" value="search" />
+			<input type="hidden" name="do" value="searchresults" />
+			<input type="hidden" name="content_type" value="posts" />
+			<input type="text" id="searchterm" name="searchterm" value="Search forums..." />
+			<button class="menuSearchButton">Go</button>
+			<!-- New Posts -->
+			<a href="index.php?act=search&amp;do=new_content&amp;content_type=posts" class="menuSearchButton">New Posts</a>
+		</form>
+	</div>
+	<div class="calicoContainer">
+		<!-- User Box -->
+		<div class="calicoUserBox">
+			{userbar}
+		</div>
+		<!-- The logo -->
+		<div class="calicoLogo">
+			<!-- If you wish to use an image, remove the <h1>, and place your image here instead :)-->
+			<h1 id="logo">CalicoBB</h1>
+		</div>
+		<!-- Clear -->
+		<div class="clear"></div>
+		<!-- Menu -->
+		<div class="calicoTopMenu">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="index.php">Forums</a></li>
+				<li><a href="index.php?act=downloads">Downloads</a></li>
+				<li><a href="index.php?act=search">Search</a></li>
+				<li><a href="index.php?act=rules">Rules</a></li>
+			</ul>
+		</div>
+		<!-- Notify users of new theme -->
+		<!--<div class="helloThereNewTheme">
+			We are currently trying out a new theme. If you have any feedback, let us know!
+			<a href="/community/topic-91-New-CalicoSoft-Forum-Theme.html">Feedback Topic</a>
+		</div>-->
+		
+		{content}
+		
+		<!-- Footer -->
+		<div class="calicoFooter">
+			<p>
+				Powered by <a href="http://www.calicobb.com" title="PHP Forum Software">CalicoBB</a> by 
+				<a href="http://www.calicosoft.com" title="PHP Software">CalicoSoft</a>.<br />
+				<!-- The time -->
+				Current Time: <strong>{current_time}</strong>.</p>
+		</div>
+	</div>
+</body>
+</html>

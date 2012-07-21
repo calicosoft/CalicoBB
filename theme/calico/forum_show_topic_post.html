@@ -1,0 +1,39 @@
+	<!-- Begin Post {pid} -->
+	<div class="calicoContentBlock" id="post{pid}">
+		<!-- Title -->
+		<div class="calicoContentBlockHeader {bannedRow}{deletedRow}">
+			<a href="index.php?post={pid}&amp;tid={tid}&amp;pl=1" title="Perma-link to this post">#{pid}</a> &ndash; {subject} ({dateline})
+		</div>
+		<!-- Content Block Inner -->
+		<div class="calicoContentBlockContent {bannedRow}{deletedRow}">
+			<!-- Post Row -->
+			<div class="calicoContentBlockRow">
+				<div class="calicoContentBlockRowCell" style="width:10%;">
+					<span class="postusername"><a href="{username_url}">{username}</a></span><br />
+					<span class="postinfo">
+						<strong>Group:</strong> {group}<br />
+						<strong>Posts:</strong> {postcount} (<a href="index.php?act=search&amp;do=findcontent&amp;content_type=posts&amp;uid={uid}">Find</a>)<br />
+						<strong>Joined:</strong> {joined}
+					</span>
+					<!--{rep_{pid}}-->
+				</div>
+				<div class="calicoContentBlockRowCell leftBorder" style="width: 88%;">
+					<!-- The post -->
+					{postcontent}
+					<!-- Signature -->
+					{signature}
+					<!-- Moderate -->
+					{moderator_tools}
+					<!-- Reply etc -->
+					<div class="postTools">
+						<a class="smallButton" href="index.php?act=report&pid={pid}&tid={tid}" title="Report abusive or spam post">Report Post</a> 
+						<a class="smallButton" href="index.php?act=reply&tid={tid}&quote={pid}" title="Reply to this topic, quoting this post">Quote</a>
+						{edit_u}
+					</div>
+				</div>
+			</div>
+			<!-- Clear -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- End Post {pid} -->

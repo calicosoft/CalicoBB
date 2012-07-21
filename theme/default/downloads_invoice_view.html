@@ -1,0 +1,20 @@
+	<tbody>
+		<tr>
+			<td>
+				<strong>Invoice to:</strong> {username}<br />
+				<strong>Invoice generated:</strong> {dateline}<br />
+				<strong>Status:</strong> {status}
+				{pay_now}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form action="index.php?act=downloads&do=updatecart&id={id}" method="post">
+					{products}
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>{pay_only}</td>
+		</tr>
+	</tbody>

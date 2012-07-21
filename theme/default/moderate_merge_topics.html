@@ -1,0 +1,31 @@
+<form method="post" name="merge_topic">
+	<table width="100%" class="forumIndex"> 
+		<caption> 
+			<span> 
+				<b class="sControl"></b> 
+				Merge Topics
+			</span> 
+		</caption>
+		<thead>
+			<tr>
+				<th colspan="2">To merge topics, enter the topic ID for each topic. Topic 1 will be the primary topic. Posts from Topic 2 will be 
+				added to Topic 2. A topic ID follows the format <em>index.php?topic=<u>12345</u></em> (12345 is the ID).</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="fifty"><label for="topic_1">Topic 1 (Primary Topic):</label></td>
+				<td><input name="topic_1" id="topic_1" value="{tid}" size="5" type="text" /></td>
+			</tr>
+			<tr>
+				<td class="fifty"><label for="topic_1">Topic 2:</label></td>
+				<td><input name="topic_2" id="topic_1" size="5" type="text" /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input name="submit" type="submit" value="Merge Topics" /></td>
+			</tr>
+		</tbody> 
+	</table> 
+	<div class="clippers"><div></div><span></span></div>
+</form>

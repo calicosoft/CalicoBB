@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link type="text/css" rel="stylesheet" href="theme/default/screen_plain.css" media="screen,projection,tv" />
+	<script src="calicobb.js" type="text/javascript"></script>
+	<title>{title}</title>
+<!--{prettify}-->
+</head>
+<body>
+<!--
+	empty tags like SPAN and B below are image sandbags for
+	sliding doors or glider-levin replacement - do not remove!!!
+	
+	Horizontal rules and .jumpto menus should be removed by CSS
+	and are present for CSS off users only.
+--> 
+<div id="pageWrapper">
+ 	<div id="gradientTop"><div></div></div>
+	<h1>Forums<span><span></span></span>
+	</h1><hr />
+	<div id="topAdvert">
+		<div class="innerAdvert">
+			<span>Looking to advertise on CalicoSoft.com? <a href="index.php?act=sendmessage&amp;to=1">Contact us now!</a></span>
+		</div>
+		<div class="time"><b>Current time:</b> {current_time}</div>
+		<div class="borderBottom"><div></div></div>
+	</div>
+	<ol class="jumpto">
+		<li><a href="#pageWrapper" accesskey="1" rel="nofollow" title="Top of Page">Top of Page</a></li>
+		<li><a href="#mainMenu" accesskey="2" rel="nofollow" title="Main Menu">Main Menu</a></li>
+		<li><a href="#content" accesskey="3" rel="nofollow" title="Page Content">Page Content</a></li>
+		<li><a href="#footer" accesskey="9" rel="nofollow" title="Bottom of Page">Bottom of Page</a></li>
+	</ol><hr />
+	<ul id="mainMenu">
+		<li class="home"><a href="/" accesskey="h" title="Go to the website homepage"><span></span><b>H</b>ome</a></li>
+		<li class="forum"><a href="index.php?" accesskey="f" title="Go to the forum homepage"><span></span><b>F</b>orum</a></li>
+		<li class="download"><a href="index.php?act=downloads" accesskey="d" title="Download files in the download center"><span></span><b>D</b>ownloads</a></li>
+		<li class="search"><a href="index.php?act=search" accesskey="s" title="Search the forums"><span></span><b>S</b>earch</a></li>
+		<li class="rules"><a href="index.php?act=rules" accesskey="r" title="View the forum rules"><span></span><b>R</b>ules</a></li>
+	</ul><hr />
+	<div id="contentWrapper">
+		<div class="borderTop"><div></div></div>
+		<div id="header">
+			<!--<ul class="subControls">
+				<li>
+					<a href="index.php?"></a>
+				</li>
+			</ul>-->
+			{userbar}
+		<!-- .header --></div>
+		<div class="innerWrapper">
+			<div class="borderTop"><div></div></div>
+			<div class="borderLeft"><div class="borderRight">
+
+			<!-- start ACTUAL content -->
+{content}
+			<!-- end ACTUAL content -->
+			<!-- .borderRight, .borderLeft --></div></div>
+			<div class="borderBottom"><div></div></div>
+		<!-- .innerWrapper --></div>
+		<div id="footer">
+			<a href="index.php?act=forumteam">Contact Forum Team</a><br />
+			Powered by <a href="http://www.calicosoft.com" title="PHP Forum Software">CalicoBB</a> &copy; <a href="http://www.calicosoft.com" title="PHP Software">CalicoSoft</a>
+		</div>
+		<div class="borderBottom"><div></div></div>
+	<!-- #content --></div>
+<!-- #pageWrapper --></div> 
+</body></html>

@@ -1,0 +1,21 @@
+		<form action="" id="editForm" method="post" enctype="multipart/form-data">
+			<p>
+				<label for="title">Title:</label>
+				<input type="text" class="input_text" name="title" id="title" value="{title}" /></p>
+			<p>
+				<label for="u_file">File:</label>
+				<strong style="color:red;">To change the file, <a href="index.php?act=downloads&amp;do=moderate&amp;mod=upload&amp;fid={fid}">click here</a>. 
+				Please note that this will delete any existing file you have uploaded for this product</strong></p>
+			<p>
+				<label for="price">Price:</label>
+				<input type="text" name="price" id="price" value="{price}" /><br />
+				<span class="hint">You can enter a price to sell your download at. Payments are made via PayPal.</p>
+			<p>
+				<label for="cat">Category:</label>
+				<select name="cat" id="cat">{catlist}</select></p>
+			<p>
+				<label for="description">Description:</label>
+				{editor}</p>
+			<p>
+				<input type="submit" value="Edit File" onclick="wswgEditor.doCheck();" class="smallButton" /></p>
+		</form>

@@ -1,0 +1,15 @@
+<p>
+	You&#39;re almost finished! Select a payment processor from below, and you&#39;ll be able to make your payment instantly.</p>
+<form action="index.php?act=downloads&do=payment&id={id}" method="post">
+	<p>
+		<strong>Payment Method:</strong><br />
+		<label for="paypal" style="font-weight: normal !important;">
+			<input type="radio" name="payment" value="paypal" id="paypal" selected="selected" /> PayPal<br />
+			<img src="theme/default/icons/payment_types.png" alt="You can pay via any of these options" /></label>
+		<br />
+		<label for="account_balance" style="font-weight: normal !important;">
+			<input {account_balance} type="radio" name="payment" value="account_balance" id="account_balance"> Account Balance<br />
+			Pay via your current account balance &ndash; only available to developers with one (or more) active products in the marketplace.</label></p>
+	<p>
+		<input class="smallButton" type="submit" name="pay" value="Checkout &rarr;" /></p>
+</form>

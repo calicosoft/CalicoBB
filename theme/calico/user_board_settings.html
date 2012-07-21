@@ -1,0 +1,32 @@
+		<form action="" method="post">
+			<p>
+				<label for="posts_per_page">Posts per Page:</label>
+				<select name="posts_per_page" id="posts_per_page">{posts_per_page}</select><br />
+				<span class="hint">How many posts should be shown per page?</span></p>
+			<p>
+				<label for="topics_per_page">Topics per Page:</label>
+				<select name="topics_per_page" id="topics_per_page">{topics_per_page}</select><br />
+				<span class="hint">How many topics should be shown per page?</span></p>
+			<p>
+				<label for="view_signatures"><input id="view_signatures" name="view_signatures" type="checkbox" value="1" {view_signatures} /> 
+				View Signatures:</label>
+				<span class="hint">Do you wish to view signatures when viewing topics?</span></p>
+			<p>
+				<label for="view_avatars"><input id="view_avatars" name="view_avatars" type="checkbox" value="1" {view_avatars} />
+				View Avatars:</label>
+				<span class="hint">Do you wish to view avatars when viewing topics?</span></p>
+			<p>
+				<label for="allow_pms"><input id="allow_pms" name="allow_pms" type="checkbox" value="1" {allow_pms} />
+				Receive PM&#39;s:</label>
+				<span class="hint">Do you wish to receive Private Messages from other users?</span></p>
+			<p>
+				<label for="allow_emails"><input id="allow_emails" name="allow_emails" type="checkbox" value="1" {allow_emails} />
+				Receive Emails:</label>
+				<span class="hint">Do you wish to receive emails from the forum management?</span>
+			<p>
+				<label for="advanced_editor"><input id="advanced_editor" name="advanced_editor" type="checkbox" value="1" {advanced_editor} />
+				Enable Advanced Editor:</label>	
+				<span class="hint">Show the Advanced Editor when posting &amp; editing topics? (Requires a modern browser &amp; Javascript)</span>
+			<p>
+				<input class="smallButton" name="submit" type="submit" value="Change Settings" /></p>
+		</form>

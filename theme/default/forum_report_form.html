@@ -1,0 +1,15 @@
+	<tbody>
+		<tr>
+			<td>
+				<label for="complaint">Reason for report:</label>
+			</td>
+			<td>
+				<textarea name="complaint" id="complaint" style="width:100%;" rows="5"></textarea>
+				<small>Important: this form is ONLY to be used ro report objectionable content, and should not be used to communinicate with the moderating team</small>
+			</td>
+		</tr>
+		<tr>
+			<td><input type="hidden" value="yes" name="submitcomplaint" />
+			<td><input class="submitEnabled" name="send" type="submit" value="Report Post" onClick="this.disabled=true; this.value=\'Sending Your Complaint. Please Wait...\'; this.form.submit();" />
+		</tr>
+	</tbody>

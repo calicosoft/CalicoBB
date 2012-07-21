@@ -1,0 +1,14 @@
+<form action="index.php?act=insertpm" method="post" id="pm">
+	<p>
+		<label for="to">To:</label>
+		<input class="input_text" name="to" type="text" value="{username}" id="to" /></p>
+	<p>
+		<label for="subject">Subject:</label>
+		<input class="input_text" name="subject" type="text" value="{subject}" id="subject" /></p>
+	<p>
+		<label for="message">Message:</label>
+		{message}</p>
+	<p>
+		<input class="smallButton" name="Submit"
+			onClick="wswgEditor.doCheck(); this.disabled=true; this.value=\'Please Wait...\'; this.form.submit();" type="submit" value="Send Message" /></p>
+</form>

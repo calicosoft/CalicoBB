@@ -1,0 +1,23 @@
+<form action="index.php?act=usercp&amp;do=do_editprofile" method="post">
+	<p>
+		<label for="username">Username</label>
+		<input class="input_text" id="username" type="text" value="{username}" readonly="readonly" name="username" /><br />
+		<small class="hint">You may not change your username.</small></p>
+	<p>
+		<label for="location">Location:</label>
+		<input class="input_text" id="location" type="text" value="{location}" name="location" /></p>
+	<p>
+		<label for="gender">Gender:</label>
+		{gender}</p>
+	<p>
+		<label for="website">Website:</label>
+		<input class="input_text" id="website" type="text" value="{website}" name="website" /></p>
+	<p>
+		<label for="aboutme">About Me:</label>
+		<textarea id="aboutme" name="aboutme" style="width:95%;" rows="4">{aboutme}</textarea></p>
+	<p>
+		<label for="signature">Signature:</label>
+		{signature}</p>
+	<p>
+		<input class="smallButton" onClick="wswgEditor.doCheck();" type="submit" name="submit" value="Edit Profile" /></p>
+</form>

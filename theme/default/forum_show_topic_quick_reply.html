@@ -1,0 +1,10 @@
+<h2>Quick Reply</h2>
+<form action="index.php?act=do_post&type=reply&tid={tid}&amp;fid={fid}" method="post" id="quickReply" name="quickReply">
+	<p>
+		<textarea name="messagebody" id="messagebody" style="width:100%;" rows="4"></textarea></p>
+	<p>
+		<input type="hidden" name="title" value="{title}" />
+		<input type="hidden" name="no_confirm" value="1" />
+		<input type="submit" value="Reply to Topic" name="sb" class="submitEnabled" onClick="this.disabled=true; this.value='Please Wait...'; this.form.submit();" />
+		</p>
+</form>

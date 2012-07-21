@@ -1,0 +1,37 @@
+<form action="index.php?act=insertpm" method="post" id="pm">
+	<table width="100%" class="forumIndex"> 
+	<caption> 
+		<span> 
+			<b class="sControl"></b> 
+			Send New Private Message
+		</span> 
+	</caption> 
+		<tbody>
+			<tr>
+				<td style="width: 15%;">
+					<label for="to">To:</label></td>
+				<td>
+					<input class="input_text" name="to" type="text" value="{username}" id="to" /></td>
+			</tr>
+			<tr>
+				<td>
+					<label for="subject">Subject:</label></td>
+				<td>
+					<input class="input_text" name="subject" type="text" value="{subject}" id="subject" /></td>
+			</tr>
+			<tr>
+				<td>
+					<label for="message">Message:</label></td>
+				<td>
+					{message}</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>
+					<input class="submitEnabled" name="Submit"
+						onClick="wswgEditor.doCheck(); this.disabled=true; this.value=\'Please Wait...\'; this.form.submit();" type="submit" value="Send Message" /></td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+<div class="clippers"><div></div><span></span></div> 

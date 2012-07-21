@@ -1,0 +1,50 @@
+
+		<!-- Begin Post {pid} -->
+		<tr id="post{pid}"{del_bg}>
+			<td rowspan="2" valign="top" style="width:15%;{del_bg}">
+				<!-- Show Owner & Link to their profile -->
+				<span class="postusername">
+					<a href="{username_url}" title="{username_s}'s profile">{username}</a>
+				</span>
+				<!-- Show Avatar (if it's allowed) -->
+				{avatar}
+				<!-- Post info seperate -->
+				<div class="postinfo_br"></div>
+				<!-- Give some information about the user -->
+				<span class="postinfo">
+					<strong>Group:</strong> {group}<br />
+					<strong>Posts:</strong> {postcount} (<a href="index.php?act=search&amp;do=findcontent&amp;content_type=posts&amp;uid={uid}">Find</a>)<br />
+					<strong>Joined:</strong> {joined}
+				</span>
+				<!-- Reputation (If installed) -->
+				<!--{rep_{pid}}-->
+			</td>
+			<td style="{del_bg}">
+				<!-- Basic Post Information -->
+				<div style="float:left;">
+					<a href="index.php?post={pid}&amp;tid={tid}&amp;pl=1" title="Permanent link to this post">#{pid}</a> &ndash; 
+					Posted: {dateline}
+					{ip}
+				</div>
+				<!-- Post Tools (Quote, Report) -->
+				<div style="float:right;">
+					{report_post}
+					{quote}
+					{edit_u}
+				</div>
+				<div class="clear:both;"></div>
+				<!-- Subject -->
+				<div class="postSubject"><br />{subject}</div>
+				<!-- Moderate -->
+				{moderator_tools}
+			</td>
+		</tr>
+		<tr id="post{pid}_content">
+			<td style="{del_bg}">
+				<!-- The actual post -->
+				{postcontent}
+				<!-- Signature -->
+				{signature}
+			</td>
+		</tr>
+		<!-- End Post {pid} -->

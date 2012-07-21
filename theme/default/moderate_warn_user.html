@@ -1,0 +1,34 @@
+<form action="index.php?act=moderate&do=dowarn&{qs}" method="post">
+	<table width="100%" class="forumIndex">
+		<caption>
+			<span>
+				<b class="sControl"></b>
+				Warn User
+			</span>
+		</caption>
+		<thead>
+			<tr>
+				<th colspan="2">You can warn a user if they are breaking forum rules. The warning system will automatically increase their warning 
+				level. If a user gets more than 5 warning points, they will be banned until their warning level is below 5.<br />
+				A profile warning warns a user purely on the content of their profile, a post is not included.
+				</tr>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Warning Reason:</td>
+				<td>
+					{reasons}</td>
+				</tr>
+			<tr>
+				<td>Message to User:</td>
+				<td>{editor}</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input onclick="wswgEditor.doCheck();" type="submit" value="Warn User" name="warn" class="submitEnabled" /></td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="clippers"><div></div><span></span></div>
+</form>
